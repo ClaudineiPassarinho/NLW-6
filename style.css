@@ -117,21 +117,24 @@ body {
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+  transition: 2s;
 }
 
 #header.scroll {
-  background: var(--base-color);
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.175);
+  background-color: var(--base-color);
+  transition: 2.85s;
+  transform-origin: unset;
 }
 
 #header.scroll .logo span {
   color: white;
-  transition: 2.75s;
+  transition: 2.85s;
 }
 
 #header.scroll .icon-menu {
   color: white;
-  transition: 2.75s;
+  transition: 2.85s;
 }
 
 nav {
@@ -354,4 +357,70 @@ main {
 .card .title {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
+}
+
+/* --------------------------TERTIMONIALS------------------*/
+#testimonials {
+  background-color: white;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--base-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 8px;
+}
+
+/*siwper*/
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--base-color);
 }
